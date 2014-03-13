@@ -6,8 +6,8 @@ require 'newrelic-couchbase/version'
 Gem::Specification.new do |gem|
   gem.name          = "newrelic-couchbase"
   gem.version       = Newrelic::Couchbase::VERSION
-  gem.authors       = ["kurobase"]
-  gem.email         = ["sohaib@kurobase.com"]
+  gem.authors       = ["KuroBase Inc."]
+  gem.email         = ["support@kurobase.com"]
   gem.description   = %q{Couchbase Instrumentation for NewRelic RPM}
   gem.summary       = %q{Couchbase Instrumentation for NewRelic RPM}
   gem.homepage      = ""

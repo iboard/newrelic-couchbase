@@ -1,5 +1,7 @@
 # Newrelic::Couchbase
 
+![KuroBase](http://kurobase.wpengine.com/wp-content/uploads/2013/10/kurobase.png)
+
 CouchBase instrumentation for NewRelic
 
 ## Installation
@@ -28,6 +30,10 @@ OR, the following statement can be appended to the newrelic.yml file
 ```yaml
   disable_couchbase: true
 ```
+
+## Feedback/Comments
+
+You can send us Feedback or Comments here: [KuroBase Support](http://support.kurobase.com/)
 
 ## Contributing
 
