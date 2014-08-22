@@ -10,9 +10,9 @@
       :bucket,
       :bucket=
     ].each do |instruction|
-      add_method_tracer instruction, "Couchbase/Class/#{instruction.to_s}"
+      add_method_tracer instruction, "ActiveRecord/Class/#{instruction.to_s}"
     end
 
-    add_method_tracer :new, 'Couchbase/Class/connect'
+    add_method_tracer :new, 'ActiveRecord/Class/connect'
   end
 end
