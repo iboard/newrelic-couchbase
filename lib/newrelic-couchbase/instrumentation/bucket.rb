@@ -17,7 +17,14 @@
     :stats,
     :run
   ].each do |instruction|
-    add_method_tracer instruction, "ActiveRecord/Bucket/#{instruction.to_s}"
+    mapped_name = case instruction
+                    when :get,:stats                                                      then 'find'
+                    when :set,:add,:replace,:increment,:decrement,:append,:prepend,:touch then 'save'
+                    when :delete, :flush                                                  then 'delete'
+                  else 
+                    nil
+                  end
+    add_method_tracer instruction, "ActiveRecord/Bucket/#{mapped_name}"
   end
 
   add_method_tracer :incr, "ActiveRecord/Bucket/increment"
